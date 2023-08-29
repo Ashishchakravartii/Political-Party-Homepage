@@ -7,17 +7,18 @@ html,
 body{
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
+
 }
 
 .main{
     width: 100%;
     height: 100%;
-    background:linear-gradient(#6b0449,#410725,#16010b)
+    background:linear-gradient(#6b0449,#410725,#16010b);
 }
 .page1{
     width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
+    height: 97.5vh;
 }
 .logo{
     padding: 0 1vmax;
@@ -58,4 +59,59 @@ nav ul>li{
 .main-head span{
     -webkit-text-stroke: 2px white;
     color: transparent;
+}
+
+/* =========================================== page 2 start ============================= */
+
+.page2{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#16010b,#0d0107);
+    display: flex;
+    
+    
+}
+.p2-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.p2-right p{
+    width: 80%;
+}
+.p2-right h1{
+   font-family: "Roboto";
+   letter-spacing: 0.5vmax;
+   margin-bottom: 2vmax;
+   background-color: #6b0449;
+   padding: 1vmax;
+}
+.p2-right h4{
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 3vmax;
+    margin-left: 15vmax;
+    margin-top: 1vmax;
+}
+.p2-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p2-left-img-div{
+    width: 55%;
+    border: 2px solid white;
+    border-top: 0;
+    border-right: 0;
+    margin-top: 2vmax;
+    border-radius: 15px;
+    
+}
+.p2-left-img-div>img{
+    width: 100%;
+    margin-bottom: 3vmax;
+    margin-left: 3vmax;
 }
