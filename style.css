@@ -8,13 +8,15 @@ body{
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    font-family: "Roboto";
 
 }
 
 .main{
     width: 100%;
     height: 100%;
-    background:linear-gradient(#6b0449,#410725,#16010b);
+    background:linear-gradient(white,gray,black);
+    /* background:linear-gradient(#6b0449,#410725,#16010b); */
 }
 .page1{
     width: 100vw;
@@ -25,10 +27,25 @@ body{
     width: 15vmax;
     font-size: 1.2vmax;
 }
+nav{
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000000000000000;
+    background-color: rgba(255, 255, 255,0.8);
+
+}
 nav ul>li{
     font-size: 1.1vmax;
     font-family: "Roboto light";
     margin-left: 1.1vmax;
+    transition: all linear 0.2s;
+}
+nav ul>li:hover{
+    color: #3b0729;
+    font-weight: 800;
+    text-shadow: 0 0 1px #3b0729;
 }
 .page1Content{
     width: 100%;
@@ -52,7 +69,8 @@ nav ul>li{
 }
 .main-head{
     font-size: 10vmax;
-    color: white;
+    color: #3b0729;
+    /* color: white; */
     font-family: "Roboto";
     /* margin-bottom: 12vmax; */
 }
@@ -85,7 +103,8 @@ nav ul>li{
    font-family: "Roboto";
    letter-spacing: 0.5vmax;
    margin-bottom: 2vmax;
-   background-color: #6b0449;
+   background-color: #c4c0c0;
+   color: black;
    padding: 1vmax;
 }
 .p2-right h4{
@@ -114,4 +133,227 @@ nav ul>li{
     width: 100%;
     margin-bottom: 3vmax;
     margin-left: 3vmax;
+}
+
+
+/* ========================================= page 3 ======================================= */
+
+.page3{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1569285649653-0137eb6a66e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    background-color: #00010A;
+   
+
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.7);
+    position: relative;
+
+}
+.page3Content{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+.page3Content-left{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.page3Content-left h2{
+    /* color: #6b0449; */
+    /* background-color: #6b0449; */
+    text-shadow: 2px 2px 10px #ffffff;
+    letter-spacing: 0.7vmax;
+    width: 85%;
+    padding: 1vmax;
+}
+.page3Content-left p{
+    width: 80%;
+}
+.page3Content-right{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmax;
+}
+.page3Content-right div{
+    width: 27%;
+    height: 50%;
+    background-color: yellow;
+}
+.p3-div1{
+    background-image: url("https://images.unsplash.com/photo-1553658024-39485fea1f16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80");
+    background-position: center;
+    background-size: cover;
+    filter: blur(1.5px);
+    transition: all ease 0.5s;
+}
+.p3-div1 h3{
+    text-align: center;
+    margin-top: 5vmax;
+    color: white;
+    font-size: 2.3vmax;
+    font-family: "Roboto light";
+}
+    .p3-div3 h3{
+        text-align: center;
+        margin-top: 8vmax;
+        color: rgb(229, 229, 229);
+        font-size: 2.3vmax;
+        font-family: "Roboto light";
+    }
+.p3-div1:hover{
+    scale: 1.2;
+}
+.p3-div2:hover{
+    scale: 1.2;
+}
+.p3-div3:hover{
+    scale: 1.2;
+}
+.p3-div3{
+    background-image: url("https://images.unsplash.com/photo-1675855549269-af9df2620d64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80");
+    background-position: center;
+    background-size: cover;
+    filter: blur(1.5px);
+    transition: all ease 0.5s;
+
+}
+.p3-div2{
+    background-image: url("https://images.unsplash.com/photo-1677306306287-cf6aeb162d21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1836&q=80");
+    background-position: center;
+    background-size: 177%;
+    filter: blur(1.5px);
+    transition: all ease 0.5s;
+
+}
+
+
+/* ============================================ page 4 ====================================== */
+
+.page4{
+    width: 100vw;
+    height: 120vh;
+    background-color: black;
+}
+.p4-top{
+    width: 100%;
+    height: 18%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.p4-top h1{
+    font-family: "Roboto";
+    letter-spacing: 1vmax;
+   
+}
+.p4-bottom{
+    width: 100%;
+    height: 68%;
+}
+.p4-bottom div{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vmax;
+}
+.p4-bottom div>div{
+    width: 25%;
+    height: 80%;
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.555);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: start;
+    padding: 5vmax 2vmax;
+    justify-content: space-around;
+    gap: 1vmax;
+    transition: all linear 0.2s;
+}
+.p4-bottom div>div:hover{
+    scale: 1.1;
+    box-shadow: 0px 0px 5px white;
+}
+.p4-bottom div>div>img{
+    width: 10%;
+}
+.p4-bottom div>div>p{
+    color: rgb(181, 173, 173);
+}
+.p4-bottom div>div>h4{
+    margin-bottom: -0.5vmax;
+}
+
+/* ================================= footer ========================================= */
+
+footer{
+    width: 100vw;
+    height: 60%;
+    background-color: white;
+    display: flex;
+}
+.footer-left{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-left i{
+ font-size: 7vmax;
+}
+.footer-left p{
+ font-size: 1vmax;
+}
+.footer-right{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2vmax;
+}
+.footer-right ul{
+    list-style: none;
+
+}
+.lastBar{
+    width: 100vw;
+    height: 3vmax;
+    background-color: rgb(197, 192, 192,0.5);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5vmax 3vmax;
+    /* align-items: center; */
+    
+}
+.lastBar p{
+    font-size: 1vmax;
 }
